@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script
+			src="http://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+		</script>
+		<script src="Weather.js"></script> <!-- Jquery doc -->
+		<script src="skycons.js"></script>
+        <link rel="stylesheet" href="style.css">
+                
+	</head>
+	<body>	
+    <div class="divTable">
+        <div class="divTableBody">
+            <h1> The Weather Channel</h1>
+            <div class="divTableRow">
+                <div class="divTableCell50">
+                    <h2> Your Location </h2>		
+                    <p id="latitude">latitude</p>
+                    <p id="longitude">longitude</p>
+                    <p id="Location">Location</p>
+                    <!--<div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var uluru = {lat: -25.363, lng: 131.044};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 4,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP8ffR3_Fsxuc4aAuECbrMJji_-uHUufc&callback=initMap">
+                    </script>-->
+                    </div>
+                <div class="divTableCell50">
+                    <h2> Current Weather </h2>		
+                    <canvas id="icon11" width="60" height="60"></canvas>
+                    <p id="Desc0">Desc0</p>
+                    <p id="Temp">Temp</p>
+                    <p id="Summary">Summary</p>
+                </div>
+            </div>
+        </div>
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell13"><h3>Today</h3></div>
+                <div class="divTableCell13"><h3>Tomorrow</h3></div>
+                <div class="divTableCell13"></div>
+                <div class="divTableCell13"></div>
+                <div class="divTableCell13"></div>
+                <div class="divTableCell13"></div>
+                <div class="divTableCell13"></div>
+                <div class="divTableCell13"></div>
+                
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell13">
+                    <canvas id="icon_0" width="60" height="60"></canvas>
+                    <p id="Day_0">Day_0</p>
+                    <p id="Desc_0">Desc_0</p>
+                    <p id="Min_0">Min</p>
+                    <p id="Max_0">Max</p>
+                </div>
+                <div class="divTableCell13">
+                    <canvas id="icon_1" width="60" height="60"></canvas>
+                    <p id="Day_1">Day_1</p>
+                    <p id="Desc_1">Desc_1</p>
+                    <p id="Min_1">Min</p>
+                    <p id="Max_1">Max</p>
+                </div>
+                <div class="divTableCell13">
+                    <canvas id="icon_2" width="60" height="60"></canvas>
+                    <p id="Day_2">Day_2</p>
+                    <p id="Desc_2">Desc_2</p>
+                    <p id="Min_2">Min</p>
+                    <p id="Max_2">Max</p>
+                </div>
+                <div class="divTableCell13">
+                    <canvas id="icon_3" width="60" height="60"></canvas>
+                    <p id="Day_3">Day_3</p>
+                    <p id="Desc_3">Desc_3</p>
+                    <p id="Min_3">Min</p>
+                    <p id="Max_3">Max</p>
+                </div>
+                <div class="divTableCell13">
+                    <canvas id="icon_4" width="60" height="60"></canvas>
+                    <p id="Day_4">Day_4</p>
+                    <p id="Desc_4">Desc_4</p>
+                    <p id="Min_4">Min</p>
+                    <p id="Max_4">Max</p>
+                </div>
+                <div class="divTableCell13">
+                    <canvas id="icon_5" width="60" height="60"></canvas>
+                    <p id="Day_5">Day_5</p>
+                    <p id="Desc_5">Desc_5</p>
+                    <p id="Min_5">Min</p>
+                    <p id="Max_5">Max</p>
+                </div>
+                <div class="divTableCell13">
+                    <canvas id="icon_6" width="60" height="60"></canvas>
+                    <p id="Day_6">Day_6</p>
+                    <p id="Desc_6">Desc_6</p>
+                    <p id="Min_6">Min</p>
+                    <p id="Max_6">Max</p>
+                </div>
+                <div class="divTableCell13">
+                    <canvas id="icon_7" width="60" height="60"></canvas>
+                    <p id="Day_7">Day_7</p>
+                    <p id="Desc_7">Desc_7</p>
+                    <p id="Min_7">Min</p>
+                    <p id="Max_7">Max</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>         
+	</body>
+</html>

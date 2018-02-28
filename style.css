@@ -1,0 +1,51 @@
+*{
+    /*border: 1px red dotted;*/
+    box-sizing: border-box;
+    text-align: center;
+    border-collapse: collapse;
+}
+h1{
+    text-shadow: 2px 0px #4e4e4e;
+    margin: 0px;
+}
+
+.divTableRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divTableCell50{
+    border:1px black dotted;
+    width: 50%;
+    background: rgba(97, 98, 98, 0.13);
+}
+
+.divTableCell13 {
+    border-left: 1px dotted;
+    border-right: 1px dotted;
+    border-collapse: separate;
+    width: 12.5%;
+}
+
+.divTable {
+    width: 80%;
+    box-shadow: 0px 0px 20px 0px grey;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+}
+
+.divTableBody {
+     background: rgba(222, 217, 217, 0.58);
+}
+
+#map {
+    height: 200px;
+    width: 70%;
+}
+
+p{
+    margin: 3px;
+}
